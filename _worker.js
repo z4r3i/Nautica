@@ -118,7 +118,7 @@ function getAllConfig(request, hostName, proxyList, page = 0) {
 
     // Build HTML
     const document = new Document(request);
-    document.setTitle("Welcome to <span class='text-blue-500 font-semibold'>Nautica</span>");
+    document.setTitle("Welcome to <span class='text-blue-500 font-semibold'>rah nejat</span>");
     document.addInfo(`Total: ${proxyList.length}`);
     document.addInfo(`Page: ${page}/${Math.floor(proxyList.length / PROXY_PER_PAGE)}`);
 
@@ -1120,8 +1120,8 @@ let baseHTML = `
         </svg>
       </div>
       <div>
-        <div class="text-md font-bold text-blue-500">Berhasil!</div>
-        <p class="text-sm text-neutral-800">Akun berhasil disalin</p>
+        <div class="text-md font-bold text-blue-500">bede6!</div>
+        <p class="text-sm text-neutral-800">Copied</p>
       </div>
     </div>
     <!-- Select Country -->
@@ -1139,8 +1139,7 @@ let baseHTML = `
       <div id="container-info" class="bg-amber-400 border-2 border-neutral-800 text-right px-5">
         <div class="flex justify-end gap-3 text-sm">
           <p id="container-info-ip">IP: 127.0.0.1</p>
-          <p id="container-info-country">Country: Indonesia</p>
-          <p id="container-info-isp">ISP: Localhost</p>
+          <p id="container-info-country">Country: Iran</p>
         </div>
       </div>
     </div>
@@ -1176,34 +1175,6 @@ let baseHTML = `
         <div class="w-[75%] h-[30%] flex flex-col gap-1 p-1 text-center rounded-md">
           <div class="basis-1/6 w-full h-full rounded-md">
             <div class="flex w-full h-full gap-1 justify-between">
-              <button
-                onclick="copyToClipboardAsTarget('clash')"
-                class="basis-1/2 p-2 rounded-full bg-amber-400 flex justify-center items-center"
-              >
-                Clash
-              </button>
-              <button
-                onclick="copyToClipboardAsTarget('sfa')"
-                class="basis-1/2 p-2 rounded-full bg-amber-400 flex justify-center items-center"
-              >
-                SFA
-              </button>
-              <button
-                onclick="copyToClipboardAsTarget('bfr')"
-                class="basis-1/2 p-2 rounded-full bg-amber-400 flex justify-center items-center"
-              >
-                BFR
-              </button>
-            </div>
-          </div>
-          <div class="basis-1/6 w-full h-full rounded-md">
-            <div class="flex w-full h-full gap-1 justify-between">
-              <button
-                onclick="copyToClipboardAsTarget('v2ray')"
-                class="basis-1/2 p-2 rounded-full bg-amber-400 flex justify-center items-center"
-              >
-                V2Ray/Xray
-              </button>
               <button
                 onclick="copyToClipboardAsRaw()"
                 class="basis-1/2 p-2 rounded-full bg-amber-400 flex justify-center items-center"
